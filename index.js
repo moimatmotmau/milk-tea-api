@@ -18,7 +18,6 @@ app.use(cors());
 app.use('/products', products)
 app.use('/users', users)
 app.use('/orders', orders)
-console.log('port: ', PORT);
 mongoose
     .connect(URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
