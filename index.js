@@ -5,6 +5,7 @@ import products from './routers/products.js'
 import users from './routers/users.js'
 import orders from './routers/orders.js'
 import mongoose from 'mongoose';
+// require("dotenv").config();
 
 const app = express();
 const PORT = process.env.port || 5000;
