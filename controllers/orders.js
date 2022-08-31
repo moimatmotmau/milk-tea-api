@@ -11,7 +11,7 @@ export const getOrders = async(req, res) => {
 export const getOrderById = async(req, res) => {
     try {
         const findOrder = req.params.id;
-        const Order = await orderModel.findById(findOrder);
+        const Order = await ordersModel.findById(findOrder);
         console.log(Order)
         res.status(200).json(Order);
     } catch (err) {
